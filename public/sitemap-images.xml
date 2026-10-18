@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://vsalab.vn/</loc>
+    <image:image>
+      <image:loc>https://vsalab.vn/images/banner/banner-hero-cam-rung-tay-giang.jpg</image:loc>
+      <image:title>Cam Rừng Tây Giang - Tinh Hoa Thiên Nhiên VSA LAB</image:title>
+      <image:caption>Vùng thổ nhưỡng đại ngàn Tây Giang, nguồn cội của những giọt tinh dầu cam rừng nguyên bản.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vsalab.vn/product-tinh-dau-cam-rung-tay-giang.webp</image:loc>
+      <image:title>Tinh Dầu Cam Rừng Tây Giang 10ml</image:title>
+      <image:caption>Chưng cất lôi cuốn hơi nước áp suất thấp khép kín, 100% nguyên chất.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vsalab.vn/product-tinh-dau-sa-chanh.webp</image:loc>
+      <image:title>Tinh Dầu Sả Chanh Nguyên Chất 10ml</image:title>
+      <image:caption>Kháng khuẩn tự nhiên và khử mùi xông phòng thơm mát.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vsalab.vn/product-tinh-dau-buoi-quang-ngai.webp</image:loc>
+      <image:title>Tinh Dầu Vỏ Bưởi Quảng Ngãi 10ml</image:title>
+      <image:caption>Chiết xuất từ vỏ bưởi đỏ hữu cơ, dưỡng tóc và tạo cảm giác tươi mới.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vsalab.vn/product-tinh-dau-tram-gio-ninh-binh.webp</image:loc>
+      <image:title>Tinh Dầu Tràm Gió Nguyên Bản 10ml</image:title>
+      <image:caption>Hàm lượng Cineol tự nhiên cao, bảo vệ đường hô hấp và giữ ấm cơ thể.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vsalab.vn/product-tinh-dau-tram-huong.webp</image:loc>
+      <image:title>Tinh Dầu Trầm Hương Thượng Hạng 10ml</image:title>
+      <image:caption>Hương thơm thanh tịnh, trợ thiền định và an định tinh thần.</image:caption>
+    </image:image>
+  </url>
+</urlset>

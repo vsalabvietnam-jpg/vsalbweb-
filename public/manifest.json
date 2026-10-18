@@ -1,0 +1,19 @@
+{
+  "name": "VSALAB - Tinh Dầu Thiên Nhiên Nguyên Bản",
+  "short_name": "VSALAB",
+  "description": "Thương hiệu tinh dầu thiên nhiên cao cấp VSALAB - Tinh Hoa Thiên Nhiên, chắt lọc 100% nguyên chất từ các vùng nguyên liệu đặc trưng Việt Nam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F0",
+  "theme_color": "#2D4B39",
+  "orientation": "portrait-primary",
+  "lang": "vi-VN",
+  "icons": [
+    {
+      "src": "/images/logo/vsalab-logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

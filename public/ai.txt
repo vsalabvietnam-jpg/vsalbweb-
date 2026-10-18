@@ -1,0 +1,12 @@
+# ai.txt - Machine-readable AI Crawler Directives for https://vsalab.vn
+version: 1.0
+domain: vsalab.vn
+contact: info@vuontinhdau.vn
+content-type: essential-oils, science-agriculture, organic-botany
+
+allow-crawling: true
+allow-training: true
+allow-summarization: true
+canonical-url: https://vsalab.vn/
+knowledge-file: https://vsalab.vn/llms.txt
+sitemap: https://vsalab.vn/sitemap.xml

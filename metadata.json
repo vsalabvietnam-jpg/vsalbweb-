@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix An Nhiên - Tinh Dầu Thiên Nhiên",
+  "description": "Thương hiệu tinh dầu thiên nhiên cao cấp Việt Nam - Tinh hoa từ vùng đất Việt",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

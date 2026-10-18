@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi-VN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Comprehensive compatibility safeguard for Window.prototype.fetch and global fetch assignment
+      (function() {
+        try {
+          var _nativeFetch = window.fetch ? window.fetch.bind(window) : null;
+          var _currentFetch = _nativeFetch;
+
+          function getFetch() {
+            return _currentFetch;
+          }
+          function setFetch(fn) {
+            _currentFetch = fn;
+          }
+
+          // 1. Redefine on Window.prototype (crucial for Chrome/Blink IDL methods)
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: getFetch,
+                set: setFetch,
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e1) {}
+          }
+
+          // 2. Redefine on window object itself
+          try {
+            Object.defineProperty(window, 'fetch', {
+              get: getFetch,
+              set: setFetch,
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e2) {}
+
+          // 3. Redefine on globalThis
+          try {
+            if (typeof globalThis !== 'undefined') {
+              Object.defineProperty(globalThis, 'fetch', {
+                get: getFetch,
+                set: setFetch,
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (e3) {}
+
+          // 4. Suppress any lingering uncaught setter error from external platform scripts/extensions
+          window.addEventListener('error', function(event) {
+            if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('only a getter') !== -1) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+              return true;
+            }
+          }, true);
+        } catch (err) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>VSALAB - Tinh Hoa Thiên Nhiên | Tinh Dầu Thiên Nhiên Nguyên Bản</title>
+    <meta name="description" content="Thương hiệu tinh dầu thiên nhiên cao cấp VSALAB - Tinh Hoa Thiên Nhiên, chắt lọc 100% nguyên chất từ các vùng nguyên liệu đặc trưng Việt Nam." />
+    <meta name="keywords" content="tinh dầu thiên nhiên, tinh dầu nguyên chất, tinh dầu vsalab, cam rừng tây giang, chưng cất hơi nước, dược liệu việt nam, vườn tinh dầu" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="VSA LAB - Vườn Tinh Dầu" />
+    <meta name="theme-color" content="#2D4B39" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="https://vsalab.vn/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VSA LAB - Vườn Tinh Dầu" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content="VSALAB - Tinh Hoa Thiên Nhiên | Tinh Dầu Thiên Nhiên Nguyên Bản" />
+    <meta property="og:description" content="Thương hiệu tinh dầu thiên nhiên cao cấp VSALAB - Tinh Hoa Thiên Nhiên, chắt lọc 100% nguyên chất từ các vùng nguyên liệu đặc trưng Việt Nam." />
+    <meta property="og:image" content="https://vsalab.vn/images/banner/banner-hero-cam-rung-tay-giang.jpg" />
+    <meta property="og:url" content="https://vsalab.vn/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vsalab_vn" />
+    <meta name="twitter:title" content="VSALAB - Tinh Hoa Thiên Nhiên | Tinh Dầu Thiên Nhiên Nguyên Bản" />
+    <meta name="twitter:description" content="Thương hiệu tinh dầu thiên nhiên cao cấp VSALAB - Tinh Hoa Thiên Nhiên, chắt lọc 100% nguyên chất từ các vùng nguyên liệu đặc trưng Việt Nam." />
+    <meta name="twitter:image" content="https://vsalab.vn/images/banner/banner-hero-cam-rung-tay-giang.jpg" />
+
+    <!-- PWA, Favicons & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/images/logo/vsalab-logo.svg" />
+    <link rel="apple-touch-icon" href="/images/logo/vsalab-logo.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Core Web Vitals Resource Hints: Preconnect & DNS-Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Default Initial Structured Data Graph -->
+    <script type="application/ld+json" id="vsalab-schema-graph">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://vsalab.vn/#organization",
+          "name": "VSA LAB - Vườn Tinh Dầu",
+          "url": "https://vsalab.vn",
+          "logo": "https://vsalab.vn/images/logo/vsalab-logo.svg",
+          "telephone": "+84-833-15-3388"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://vsalab.vn/#website",
+          "url": "https://vsalab.vn",
+          "name": "VSALAB - Tinh Hoa Thiên Nhiên"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#FAF6F0] text-[#243328] antialiased selection:bg-[#2D4B39] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Safe Service Worker Registration
+      if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').catch(function() {});
+        });
+      }
+    </script>
+  </body>
+</html>
+

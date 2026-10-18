@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist",
+    "redirects": [
+      {
+        "source": "**",
+        "destination": "https://vsalab.org",
+        "type": 301
+      }
+    ]
+  }
+}
